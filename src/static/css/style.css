@@ -1,0 +1,113 @@
+ /* sert à définir la mise en page de base du corps de la page */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   }
+   
+   /* apparence de l'en-tête de la page */
+   header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+   }
+   
+   /* Permets de mettre le flexbox sur tout le main. */
+   main {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   /* Permets de définir le style du form */
+   form {
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   
+   /* Permet de définir la couleur derrière les images*/
+   img {
+    background-color: black;
+   }
+   
+   /* sert à définir l'apparence du pied de page de la page */
+   footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+   }
+   
+   /*Sert à définir l'apprence du formulaire */
+   #letter {
+    padding: 10px;
+    font-size: 16px;
+   }
+   
+   /*sert à définir la largeur d'un élément avec la classe 'rad'. */
+   .rad {
+    width: 200px;
+   }
+   
+   /* Permets de mettre l'ecriture d'erreur en rouge */
+   #message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+   }
+   
+   /* Permets de rendre beau le lien vers la page de choix de difficulté */
+   .acceuilSite a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   }
+   
+   /* Permet de rendre plus beau les liens vers d'autres pages. */
+   .choixDifficulte a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+   }
+   
+   /* Permet de mettre le h3 au centre et de redimensionner le texte   */
+   .choixDifficulte h3 {
+    width: fit-content;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   /* Permet d'avoir une notre boite de couleur verte  */
+   .easy {
+    background-color: #5cb85c;
+    color: #fff;
+   }
+   
+   /* Permet d'avoir une notre boite de couleur orange  */
+   .medium {
+    background-color: #f0ad4e;
+    color: #fff;
+   }
+   
+   /*  Permet d'avoir une notre boite de couleur rouge  */
+   .hard {
+    background-color: #d9534f;
+    color: #fff;
+   }

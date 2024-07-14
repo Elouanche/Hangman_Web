@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Web</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+    <body>
+        <header>
+            <!-- Cette balise h1 sert à afficher le titre de la page. -->
+            <h1>Hangman Web</h1>
+        </header>
+    
+        <main>
+            {{if .Message}}
+            <p style="color: red;">{{.Message}}</p>
+            {{end}}
+            
+            <!-- Cette balise form sert à créer un formulaire pour saisir une lettre. -->
+            <form action="/hangman" method="post">
+                <label for="letter">Guess a Letter:</label>
+                <input type="text" id="letter" name="letter" required>
+                <button type="submit">Submit</button>
+            </form>
+    
+            <!-- Ces balises p et img servent à afficher des informations sur le jeu Hangman. -->
+            <p>{{.Word}}</p> 
+            <p>Lettres utilisé : {{.Allguess}}</p>
+            <p>Score : {{.Score}}</p>
+            <p>Essaies utilisés : {{.Attempts}}</p>
+            <img style="width: 200px;" class="rad" src="./static/img/{{.Attempts}}.png" alt="Image {{.Attempts}}">
+        </main>
+    
+        <footer>
+            <!-- Cette balise p sert à afficher le crédit du projet Hangman Web. -->
+            <p>Projet Hangman Web réalisé par CHEDALLEUX Elouan et MATRO Daryl</p>
+        </footer>
+    
+    </body>
+    
+    </html>
+    
