@@ -53,4 +53,4 @@ Si votre projet est compilé et que vous souhaitez restart le jeu vous pouvez fa
 
 ## VII. Remerciements
 
-Je vous remercions d'avoir essayé mon projet en espérant que cela vous a plu !
+Je vous remercie d'avoir essayé mon projet en espérant que cela vous a plu !
